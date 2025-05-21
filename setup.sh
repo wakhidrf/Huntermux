@@ -43,15 +43,15 @@ cd
 source <(curl -fsSL https://kutt.it/msf)
 
 cd
-cd Termux-Offsec/assets/
+cd Huntermux/assets/
 tar -xvzf ngrok-v3-stable-linux-arm64.tgz -C /data/data/com.termux/files/usr/bin
 
 cd
-cd Termux-Offsec/assets/aircrack-ng/
+cd Huntermux/assets/aircrack-ng/
 bash setup.sh
 
 cd
-cd Termux-Offsec/assets/
+cd Huntermux/assets/
 cp jtr-installer.sh ../../jtr-installer.sh
 cd
 bash jtr-installer.sh
@@ -74,7 +74,7 @@ cd
 pip install anubis-netsec
 cd ../usr/lib/python3.11/site-packages/dns/
 rm -rf resolver.py
-cp /data/data/com.termux/files/home/Termux-Offsec/assets/resolver.py resolver.py
+cp /data/data/com.termux/files/home/Huntermux/assets/resolver.py resolver.py
 
 cd
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
@@ -90,7 +90,7 @@ cd
 git clone https://github.com/sullo/nikto.git
 cd
 ln -s /data/data/com.termux/files/home/nikto/program/nikto.pl
-cd Termux-Offsec/assets/
+cd Huntermux/assets/
 cp nikto.conf.default ../../nikto/program/nikto.conf.default
 
 clear
@@ -119,7 +119,7 @@ ln -s /data/data/com.termux/files/home/go/bin/nuclei
 ln -s /data/data/com.termux/files/home/ho/bin/mosint
 ln -s /data/data/com.termux/files/home/ho/bin/smugglefuzz
 cd
-cd Termux-Offsec/assets/
+cd Huntermux/assets/
 cp .mosint.yaml /data/data/com.termux/files/home/.mosint.yaml
 
 clear
