@@ -1,11 +1,11 @@
-# Termux-Offsec
+# Huntermux
 This repo contains some guide to install some useful tool for pentester on termux, tested on my android 14 aarch64 device non-rooted.
-## OneScriptSetup
-I made a script to easily install all tools, but make sure you have more than 7GB free space.
+## Full Install
+Make sure you have more than 7GB free space, then do
 ```
-bash
-git clone https://github.com/wakhidrf/Termux-Offsec.git
-cd Termux-Offsec
+cd
+git clone https://github.com/wakhidrf/Huntermux.git
+cd Huntermux
 bash setup.sh
 ```
 ## Repo Tools
@@ -41,16 +41,16 @@ source <(curl -fsSL https://kutt.it/msf)
 Run this
 ```
 cd
-git clone https://github.com/wakhidrf/Termux-Offsec.git
-cd Termux-Offsec/assets/aircrack-ng/
+git clone https://github.com/wakhidrf/Huntermux.git
+cd Huntermux/assets/aircrack-ng/
 bash setup.sh
 ```
 ### Ngrok
 To install ngrok, you need to sign up at [ngrok]( https://ngrok.com/), then run this
 ```
 cd
-git clone https://github.com/wakhidrf/Termux-Offsec.git
-cd Termux-Offsec/assets/
+git clone https://github.com/wakhidrf/Huntermux.git
+cd Huntermux/assets/
 tar -xvzf ngrok-v3-stable-linux-arm64.tgz -C /data/data/com.termux/files/usr/bin
 ```
 Then use your token
@@ -61,7 +61,7 @@ ngrok config add-authtoken <Your Token>
 Run this
 ```
 cd
-cd Termux-Offsec/assets/
+cd Huntermux/assets/
 cp jtr-installer.sh ../../jtr-installer.sh
 cd
 bash jtr-installer.sh
@@ -107,10 +107,10 @@ Run this
 ```
 cd
 pip install anubis-netsec
-git clone https://github.com/wakhidrf/Termux-Offsec.git
+git clone https://github.com/wakhidrf/Huntermux.git
 cd ../usr/lib/python3.11/site-packages/dns/
 rm -rf resolver.py
-cp /data/data/com.termux/files/home/Termux-Offsec/assets/resolver.py resolver.py
+cp /data/data/com.termux/files/home/Huntermux/assets/resolver.py resolver.py
 ```
 ### sqlMap
 Run This
@@ -142,8 +142,8 @@ perl nikto.pl -h
 > Adding ssl support
 ```
 cd
-git clone https://github.com/wakhidrf/Termux-Offsec.git
-cd Termux-Offsec/assets/
+git clone https://github.com/wakhidrf/Huntermux.git
+cd Huntermux/assets/
 cp nikto.conf.default ../../nikto/program/nikto.conf.default
 ```
 ## Ruby Tools
@@ -182,11 +182,11 @@ Run this
 ```
 cd
 go install -v github.com/alpkeskin/mosint/v3/cmd/mosint@latest
-git clone https://github.com/wakhidrf/Termux-Offsec.git
+git clone https://github.com/wakhidrf/Huntermux.git
 cd ../usr/bin/
 ln -s /data/data/com.termux/files/home/ho/bin/mosint
 cd
-cd Termux-Offsec/assets/
+cd Huntermux/assets/
 cp .mosint.yaml /data/data/com.termux/files/home/.mosint.yaml
 ```
 To set API, follow [alpkeskin](https://github.com/alpkeskin/mosint) guide
